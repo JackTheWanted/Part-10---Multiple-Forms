@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="btnEditName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="btnEditName.Designer.cs">
+      <DependentUpon>btnEditName.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddName.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddName.Designer.cs">
       <DependentUpon>FormAddName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditName.Designer.cs">
+      <DependentUpon>FormEditName.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

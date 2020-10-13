@@ -26,12 +26,8 @@ namespace Part_10___Multiple_Forms
 
         private void btnEditName_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnEditName_Click_1(object sender, EventArgs e)
-        {
-
+            FormEditName frmEditName = new FormEditName();
+            frmEditName.ShowDialog();
         }
 
         private void btnQuit_Click(object sender, EventArgs e)
