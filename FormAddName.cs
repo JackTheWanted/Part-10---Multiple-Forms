@@ -32,17 +32,17 @@ namespace Part_10___Multiple_Forms
             string newName = txtAddName.Text.Trim();
             if (newName != "")
             {
-                if (MainForm.names.Contains(newName))
+                if (MainForm.names.Contains(newName.ToUpper()))
                 {
                     lblStatus.Text = "Please enter a name not already in the list";
                 }
                 else
                 {
-                    MainForm.names.Add(newName);
+                    MainForm.names.Add(newName.ToUpper());
                     lstNames.DataSource = null;
                     lstNames.DataSource = MainForm.names;
                     txtAddName.Text = "";
-                    lblStatus.Text = ($"New name {newName} had been added");
+                    lblStatus.Text = ($"New name {newName.ToUpper()} had been added");
                 }
 
             }
